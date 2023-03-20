@@ -2,8 +2,8 @@ from tkinter import *
 import smtplib
 
 
-email_send = "artem.pobortsew@gmail.com"
-password = "dmduugzmgizjzqet"
+email_send = "example@gmail.com"
+password = "your_password"
 
 def send():
     with smtplib.SMTP("smtp.gmail.com",587) as connection:
