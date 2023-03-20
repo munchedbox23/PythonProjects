@@ -6,8 +6,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 
-email_send = "Munchedbox230@yandex.ru"
-password = "ravekipygogedixz"
+email_send = "example@mail.ru"
+password = "your_password"
 
 today = dt.datetime.now()
 today_tuple = (today.month, today.day)
