@@ -4,8 +4,8 @@ STOCK_API = "5FOI69GMQDIQ4B69"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 NEWS_API_KEY = "a1fb36ee33124a849cfe6629eee3e9d8"
-email_send = "artem.pobortsew@gmail.com"
-password = "vrrdsmbffldghdnt"
+email_send = "example@gmail.com"
+password = "your_password"
 
 import smtplib
 import requests
@@ -53,7 +53,7 @@ if abs(diff_percent) > -1:
         message = MIMEMultipart()
         message["Subject"] = Header("article", "utf-8")
         message["From"] = email_send
-        message["To"] = "rubcov_egorka@mail.ru"
+        message["To"] = "example@mail.ru"
 
     # attach message body
         body = MIMEText(article, "plain", "utf-8")
@@ -65,6 +65,6 @@ if abs(diff_percent) > -1:
             connection.login(email_send,password)
             connection.sendmail(
                 from_addr = email_send,
-                to_addrs = "rubcov_egorka@mail.ru",
+                to_addrs = "example@mail.ru",
                 msg = message.as_string()
             )
